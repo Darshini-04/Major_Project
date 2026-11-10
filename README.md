@@ -1,6 +1,5 @@
-# PulseIQ
 
-PulseIQ is a local research prototype for temporal e-commerce customer analytics. It reads the two-sheet Online Retail II workbook, builds relative RFM and monthly customer profiles, and provides a Next.js dashboard with a FastAPI data API. Chronological next-segment and 90-day inactivity models, holdout metrics, customer predictions, and SHAP outputs are available in the current workspace.
+This project is a local research prototype for temporal e-commerce customer analytics. It reads the two-sheet Online Retail II workbook, builds relative RFM and monthly customer profiles, and provides a Next.js dashboard with a FastAPI data API. Chronological next-segment and 90-day inactivity models, holdout metrics, customer predictions, and SHAP outputs are available in the current workspace.
 
 ## Data setup
 
