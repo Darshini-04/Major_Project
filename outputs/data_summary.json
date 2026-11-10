@@ -1,0 +1,38 @@
+{
+  "available": true,
+  "dataset": "online_retail_II.xlsx",
+  "sheets": [
+    "Year 2009-2010",
+    "Year 2010-2011"
+  ],
+  "source_rows": 1067371,
+  "valid_customer_rows": 824364,
+  "purchase_rows": 805549,
+  "excluded_after_required_fields": 243007,
+  "excluded_non_purchase_rows": 18815,
+  "customers": 5878,
+  "repeat_customers": 4255,
+  "at_risk_customers": 2252,
+  "date_min": "2009-12-01",
+  "date_max": "2011-12-09",
+  "segment_counts": {
+    "Potential Loyalists": 1439,
+    "At Risk": 1301,
+    "Champions": 1294,
+    "Needs Attention": 951,
+    "Loyal": 893
+  },
+  "model_status": "Training failed once; retry needed",
+  "training_attempts": 1,
+  "prediction_available": false,
+  "shap_available": false,
+  "definitions": {
+    "purchase_rows": "Quantity > 0, Price > 0, and invoice number does not start with C",
+    "return_rows": "Negative-quantity rows whose invoice number does not start with C; kept separate from cancellations.",
+    "cancelled_invoices": "Distinct invoice numbers beginning with C.",
+    "repeat_customer": "More than one distinct purchase invoice",
+    "at_risk_customer": "Relative RFM segment is Needs Attention or At Risk",
+    "segment_method": "Relative per-snapshot quintile scores; heuristic labels, not validated business definitions.",
+    "recommendation_priority": "Review for current/predicted Needs Attention/At Risk or predicted 90-day inactivity probability >= 0.5; heuristic and not calibrated."
+  }
+}
